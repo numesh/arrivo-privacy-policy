@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Arrivo – a proximity-based arrival alert Android app." />
+  <title>Arrivo – Privacy Policy</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0d0d0d;
+      margin-bottom: 6px;
+    }
+
+    .last-updated {
+      font-size: 0.875rem;
+      color: #666666;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #333333;
+    }
+
+    ul {
+      margin: 8px 0 12px 20px;
+      color: #333333;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #1a1a1a;
+    }
+
+    footer {
+      border-top: 1px solid #e0e0e0;
+      padding-top: 24px;
+      margin-top: 48px;
+      font-size: 0.85rem;
+      color: #888888;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Arrivo – Privacy Policy</h1>
+      <p class="last-updated">Last Updated: March 5, 2026</p>
+    </header>
+
+    <!-- Introduction -->
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Welcome to <strong>Arrivo</strong>. Arrivo is a proximity-based arrival alert application for Android that
+        notifies you when you are approaching a selected destination. This Privacy Policy explains how Arrivo handles
+        information in connection with your use of the app.
+      </p>
+      <div class="highlight-box">
+        <p>
+          <strong>Summary:</strong> Arrivo does not collect, transmit, or store any personal information on remote
+          servers. All data remains on your device.
+        </p>
+      </div>
+    </section>
+
+    <!-- Information We Do Not Collect -->
+    <section>
+      <h2>Information We Do Not Collect</h2>
+      <p>Arrivo does <strong>not</strong> collect or transmit any of the following:</p>
+      <ul>
+        <li>Personal identifiers (name, email address, phone number, etc.)</li>
+        <li>Account credentials (no user accounts are required)</li>
+        <li>Device identifiers sent to our servers</li>
+        <li>Location history or GPS traces uploaded to our servers</li>
+        <li>Contacts, photos, media, or files</li>
+        <li>Browsing history or usage analytics (beyond what third-party SDKs may collect — see sections below)</li>
+      </ul>
+    </section>
+
+    <!-- Location Data Usage -->
+    <section>
+      <h2>Location Data Usage</h2>
+      <p>
+        Arrivo requires access to your device's precise location (<code>ACCESS_FINE_LOCATION</code>) to calculate
+        the distance between your current position and your chosen destination. Location data is used solely
+        on-device to determine proximity and trigger arrival alerts.
+      </p>
+      <p>
+        <strong>Your location is never uploaded to our servers.</strong> Location data is processed in real time
+        on your device and is not stored beyond the current active tracking session.
+      </p>
+    </section>
+
+    <!-- Background Location Usage -->
+    <section>
+      <h2>Background Location Usage</h2>
+      <p>
+        Arrivo requests background location access (<code>ACCESS_BACKGROUND_LOCATION</code>) to continue monitoring
+        your proximity to the selected destination while the app is not in the foreground. This allows the app to
+        alert you even when you switch to other apps or lock your screen.
+      </p>
+      <p>
+        Background location is only active <strong>while a tracking session is explicitly started by you</strong>.
+        Once tracking is stopped or completed, background location access is no longer used. Arrivo runs a
+        foreground service with a persistent notification during active tracking so you are always aware when
+        location is being used.
+      </p>
+    </section>
+
+    <!-- Notifications -->
+    <section>
+      <h2>Notifications</h2>
+      <p>
+        Arrivo uses device notifications (<code>POST_NOTIFICATIONS</code>) to:
+      </p>
+      <ul>
+        <li>Display a persistent foreground service notification during active tracking sessions.</li>
+        <li>Deliver an arrival alert notification when you approach your destination.</li>
+      </ul>
+      <p>
+        You can manage notification permissions through your device's system settings. Disabling notifications
+        may prevent arrival alerts from being delivered.
+      </p>
+    </section>
+
+    <!-- Google Places API -->
+    <section>
+      <h2>Google Places API Usage</h2>
+      <p>
+        Arrivo uses the <strong>Google Places API</strong> to provide destination search functionality. When you
+        search for a destination, your search query is sent to Google's servers to return relevant place
+        suggestions. This interaction is subject to
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </p>
+      <p>
+        Arrivo does not store or log your search queries on any server operated by us.
+      </p>
+    </section>
+
+    <!-- Route Calculation (OSRM) -->
+    <section>
+      <h2>Route Calculation (OSRM)</h2>
+      <p>
+        To estimate the route distance between your current location and your destination, Arrivo uses the
+        <strong>OSRM (Open Source Routing Machine)</strong> routing API. Your current coordinates and destination
+        coordinates may be sent to the OSRM service to calculate a route.
+      </p>
+      <p>
+        OSRM is an open-source routing engine. Arrivo does not store routing requests or responses on any server
+        operated by us.
+      </p>
+    </section>
+
+    <!-- Advertising (Google AdMob) -->
+    <section>
+      <h2>Advertising (Google AdMob)</h2>
+      <p>
+        Arrivo displays advertisements provided by <strong>Google AdMob</strong>. AdMob may collect and use data
+        to serve personalized or non-personalized ads, including:
+      </p>
+      <ul>
+        <li>Advertising ID (resettable device identifier)</li>
+        <li>General location (coarse, not precise)</li>
+        <li>Device information (model, OS version)</li>
+        <li>App interaction data</li>
+      </ul>
+      <p>
+        This data collection is governed by
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>
+        and Google's advertising policies. You can opt out of personalized advertising by adjusting your device's
+        advertising settings under <em>Settings &gt; Google &gt; Ads</em>.
+      </p>
+    </section>
+
+    <!-- Firebase Remote Config -->
+    <section>
+      <h2>Firebase Remote Config</h2>
+      <p>
+        Arrivo uses <strong>Firebase Remote Config</strong> to remotely manage app configuration values (such as
+        feature flags and thresholds) without requiring an app update. Firebase Remote Config may collect minimal
+        device and app information to serve the correct configuration. This is subject to
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase's Privacy Policy</a>.
+      </p>
+      <p>No personal information is associated with Remote Config requests.</p>
+    </section>
+
+    <!-- Local Data Storage -->
+    <section>
+      <h2>Local Data Storage</h2>
+      <p>
+        All user preferences and app state (such as the last searched destination or alert threshold settings)
+        are stored <strong>locally on your device</strong> using Android's standard local storage mechanisms.
+        This data never leaves your device through Arrivo's systems.
+      </p>
+      <p>
+        Uninstalling Arrivo will remove all locally stored app data from your device.
+      </p>
+    </section>
+
+    <!-- Permissions Used -->
+    <section>
+      <h2>Permissions Used</h2>
+      <p>Arrivo requests the following Android permissions:</p>
+      <ul>
+        <li><strong>ACCESS_FINE_LOCATION</strong> – To determine your precise location during tracking.</li>
+        <li><strong>ACCESS_COARSE_LOCATION</strong> – Fallback location access.</li>
+        <li><strong>ACCESS_BACKGROUND_LOCATION</strong> – To continue tracking in the background while a session is active.</li>
+        <li><strong>FOREGROUND_SERVICE</strong> – To run a foreground service during active tracking.</li>
+        <li><strong>FOREGROUND_SERVICE_LOCATION</strong> – Required for foreground services that access location.</li>
+        <li><strong>POST_NOTIFICATIONS</strong> – To display tracking status and arrival alert notifications.</li>
+        <li><strong>INTERNET</strong> – Required for Google Places search, OSRM routing, Firebase Remote Config, and AdMob.</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong> – To handle any necessary initialization after device restart.</li>
+      </ul>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        Arrivo is not directed at children under the age of 13. We do not knowingly collect personal information
+        from children under 13. If you believe that a child has provided personal information through the app,
+        please contact us so we can take appropriate action.
+      </p>
+    </section>
+
+    <!-- Data Security -->
+    <section>
+      <h2>Data Security</h2>
+      <p>
+        Since Arrivo does not collect or transmit personal data to our own servers, there is no personal data
+        stored by us to secure. All data that remains on your device is protected by Android's built-in security
+        mechanisms. For data handled by third-party services (Google Places, OSRM, AdMob, Firebase), their
+        respective security practices apply.
+      </p>
+    </section>
+
+    <!-- Changes to This Policy -->
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be reflected on this page with
+        an updated "Last Updated" date. We encourage you to review this policy periodically. Continued use of
+        Arrivo after changes are posted constitutes your acceptance of the revised policy.
+      </p>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+      <h2>Contact Information</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy or Arrivo's data practices, please
+        contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:privacy@arrivo.app">privacy@arrivo.app</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Arrivo. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
